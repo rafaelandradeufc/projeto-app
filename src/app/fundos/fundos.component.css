@@ -1,0 +1,61 @@
+.card {
+    border-radius: 5px;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+.card-header {
+    height: 38px;
+    color: white;
+}
+
+.card-title {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(192, 191, 191);
+}
+
+.liquidez {
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.labels {
+    color: rgba(33, 33, 33, .54);
+    font-size: 14px;
+}
+
+.aplicacao {
+    color: black;
+}
+
+.cnpj {
+    color: rgba(33, 33, 33, .54);
+    font-size: 12px;
+}
+
+.gestor {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: black;
+    font-weight: 700;
+}
+
+.rentabilidade {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.moderadoClass {
+    background-image: linear-gradient(to right, rgb(60, 160, 80), #44B95C);
+}
+
+.agressivoClass {
+    background-image: linear-gradient(to right, rgb(216, 124, 4), #F18900);
+}
+
+.card-footer {
+    background-color: #f3f3f3;
+}

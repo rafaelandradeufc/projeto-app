@@ -1,0 +1,80 @@
+<div class="clr-row">
+    <div class="clr-col-lg-4 clr-col-md-8 clr-col-12" *ngFor="let fundo of fundos">
+
+        <a [routerLink]="['/fundos/detalhes', fundo.cnpj]" class=" card clickable">
+
+            <div class="card-header" [ngClass]="{agressivoClass: fundo.perfil == 'agressivo', moderadoClass: fundo.perfil == 'moderado'}">
+                <span>{{fundo.classe}}</span>
+
+            </div>
+
+            <div class="card-block">
+                <div class="card-title">
+
+                    <div class="clr-row">
+                        <div class="clr-col-12">
+                            <span class="gestor">{{fundo.gestor}}</span>
+                        </div>
+                    </div>
+
+                    <div class="clr-row">
+                        <div class="clr-col-12">
+                            <span class="cnpj">CNPJ: {{fundo.cnpj}}</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-text">
+
+                    <div class="clr-row">
+                        <div class="clr-col-9">
+                            <span class="labels">Valor Mínimo</span>
+                        </div>
+                        <div class="clr-col-3">
+                            <span class="labels">Liquidez</span>
+                        </div>
+
+                    </div>
+                    <div class="clr-row">
+                        <div class="clr-col-9">
+                            <span class="aplicacao">{{formatedNumber(fundo.aplicacao_minima)}}</span>
+                        </div>
+                        <div class="clr-col-3">
+                            <span class="liquidez">{{fundo.liquidez}}</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="card-footer">
+
+
+
+
+                <div class="clr-row">
+                    <div class="clr-col-9">
+                        <span class="labels">Rentabilidade Anual</span>
+
+                    </div>
+                </div>
+
+                <div class="clr-row">
+                    <div class="clr-col-8">
+                        <span class="rentabilidade">{{fundo.rentabilidade}}%</span>
+                    </div>
+                    <div class="clr-col-4">
+                        <button [routerLink]="['/fundos/detalhes', fundo.cnpj]" class="btn btn-link">+DETALHES</button>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </a>
+    </div>
+</div>
